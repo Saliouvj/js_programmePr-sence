@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Presence</title>
+    
+</head>
+<body>
+    <section id="localStorage">
+        <h1>feuille de présence</h1>
+        <div>
+            <button class='removeStag'>Clear Storage</button>
+            <button class='refreshStag'>Refresh Page</button>
+            <button class="modal-btn">Modal</button>
+            <button class="modal-btn1">Info</button>
+        </div>
+
+        <div class="modal-bg">
+            <div class="modal">
+                    <h2>Stagiaires</h2>
+                    <label for="Enter"></label>
+                    <input id="inpNom" type="text" placeholder="Enter name">
+                    <input id="inpAge" type="text" placeholder="Enter age">
+                    <input id="inpCoding" type="text" placeholder="Enter coding">
+                    <button type="button" class='btn-subscribe ajouteStag'>add</button>
+                    <span class="modal-close">X</span>
+            </div>
+        </div>
+        <div class="modal-bg1">
+            <div class="modal1">
+                <p><span class="detail">Ville :</span> <span id="city"></span></p>
+                <p><span class="detail">Pays :</span> <span id="region"></span></p>
+                <p><span class="detail">IP :</span> <span id="ip"></span></p>
+                <hr>
+                <p><span id="detail">la Date d'aujoud'hui</span> <span id="date"></span></p>
+                <p><span id="detail">L'heure :</span> <span id="heure"></span></p>
+                <span class="modal-close1">X</span>
+            </div>
+        </div>
+        <div id="listStagiaires">
+            <h4>liste des stagiaires</h4>
+            <ul class="listStag">
+
+            </ul>
+        </div>
+        <button>liste par coding</button>
+        <hr>
+    </section>
+</header>
+
+
+
+
+
+
+
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./public/js/main.js"></script>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>
